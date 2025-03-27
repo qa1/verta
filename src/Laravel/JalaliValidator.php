@@ -16,7 +16,7 @@ class JalaliValidator
      */
     public function validateDate($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) ? $parameters[0] : 'Y/m/d';
@@ -44,6 +44,7 @@ class JalaliValidator
                 return true;
             }
         }
+
         return false;
     }
 
@@ -57,7 +58,7 @@ class JalaliValidator
      */
     public function validateDateEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d';
@@ -81,7 +82,7 @@ class JalaliValidator
      */
     public function validateDateNotEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d';
@@ -104,7 +105,7 @@ class JalaliValidator
      */
     public function validateDateTime($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
 
@@ -129,7 +130,7 @@ class JalaliValidator
      */
     public function validateDateTimeEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d H:i:s';
@@ -153,7 +154,7 @@ class JalaliValidator
      */
     public function validateDateTimeNotEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d H:i:s';
@@ -177,7 +178,7 @@ class JalaliValidator
      */
     public function validateDateAfter($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d';
@@ -201,7 +202,7 @@ class JalaliValidator
      */
     public function validateDateAfterEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d';
@@ -225,7 +226,7 @@ class JalaliValidator
      */
     public function validateDateTimeAfter($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d H:i:s';
@@ -249,7 +250,7 @@ class JalaliValidator
      */
     public function validateDateTimeAfterEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d H:i:s';
@@ -273,7 +274,7 @@ class JalaliValidator
      */
     public function validateDateBefore($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d';
@@ -297,7 +298,7 @@ class JalaliValidator
      */
     public function validateDateBeforeEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d';
@@ -321,7 +322,7 @@ class JalaliValidator
      */
     public function validateDateTimeBefore($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d H:i:s';
@@ -345,7 +346,7 @@ class JalaliValidator
      */
     public function validateDateTimeBeforeEqual($attribute, $value, $parameters)
     {
-        if (!is_string($value)) {
+        if (! is_string($value)) {
             return false;
         }
         $format = count($parameters) > 1 ? $parameters[1] : 'Y/m/d H:i:s';
